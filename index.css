@@ -92,10 +92,12 @@ nav ul{
     flex-wrap: wrap;
     padding-top: 5rem;
 }
+.game{
+    text-align: center;
+}
 .game-img{
-    width: 17.5rem;
-    margin-left: 8rem;
-    margin-top: 5rem;
+    width: 18rem;
+    margin: 4%;
     cursor: pointer;
     box-shadow: 5px 4px 20px black;
 }
