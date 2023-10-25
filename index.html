@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+<body>
+<section class="father">
+    <section class="global">
+
+        <main class="part1">
+            <header>
+                <nav class="navigation">
+                    <div class="logo">
+                        <img src="images/logo-cnsole.png" class="logo">
+                    </div>
+                    <ul id="side-bar">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="magasin.html">MAGASIN</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+            <img src="./images/hamburger.png" class="menu-icon" id="menu-icon" onclick="onToggle()" />
+            <div class="sideBar " id="sidebar">
+
+                <ul class="menu-list flexDirection">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="magasin.html">MAGAZIN</a>
+                    </li>
+                    <li>
+                        <a href="news.html">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>YOUPLAY - GAMING THEME</h1>
+                        <p>You are not limited to the features of this theme. It is suitable for gaming site,
+                            and for any business project.  will  to quickly run your new creative website.</p>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <div class="container-general">
+                    <div class="card">
+                        <div class="cards">
+                            <div class="card-container">
+                                <img class="logo-cards" src="images/rss.png">
+                                <h3 >Blog</h3>
+                                <p>Youplay can be used for simple blogging,  full-stack gaming template.
+                                    Youplay can be used , not only full-stack gaming template.</p>
+                            </div>
+                            <div class="card-container">
+                                <img class="logo-cards" src="images/shopping-cart.png">
+                                <h3>Store</h3>
+                                <p>If you want to sale goods, let's do it. This is so easy with Youplay.
+                                    Youplay can be used , not only full-stack gaming template.</p>
+                            </div>
+                            <div class="card-container">
+                                <img  class="logo-cards" src="images/network.png" >
+                                <h3>Social Network</h3>
+                                <p>Build your gaming social network, or forum for Clan members.
+                                    Youplay can be used for simple blogging, not only full-stack gaming template.</p>
+                            </div>
+                        </div>
+                        <div class="game">
+                            <img class="game-img" src="images/game1.png">
+                            <img class="game-img" src="images/game2.png">
+                            <img class="game-img" src="images/game3.png">
+                            <img class="game-img" src="images/game4.png">
+                            <img class="game-img" src="images/game5.png">
+                            <img class="game-img" src="images/game6.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <footer CLASS="footer">
+                    <div class="container-footer">
+                        <div>
+                            <img class="footer-logo" src="images/logo-cnsole.png">
+                        </div>
+                        <div class="footer-media1">
+                            <img  class="footer-media" src="images/facebook.png">
+                            <img class="footer-media" src="images/linkedin.png">
+                            <img class="footer-media" src="images/instagram.png">
+                            <img class="footer-media" src="images/whatsapp.png">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-text">
+                        <p>
+                            © 2023 Mehdi.com - Theme WordPress par
+                            <br>
+                            Game.com ©2023 Tous droits réservés
+                        </p>
+                    </div>
+                </footer>
+            </section>
+        </main>
+
+
+    </section>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+<script>
+    function onToggle(){
+        console.log('clicked');
+        var menIcon = document.getElementById("menu-icon");
+        var sideBar = document.querySelector(".sideBar");
+
+        if(sideBar.style.display === "list-item"){
+            sideBar.style.display = "none";
+            menIcon.src = "./images/hamburger.png";
+        }else{
+            sideBar.style.display = "list-item";
+            menIcon.src = "./images/x.png";
+        }
+    }
+</script>
+
+</body>
+</html>

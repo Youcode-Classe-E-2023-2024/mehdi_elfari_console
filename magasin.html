@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+</head>
+<body>
+
+<section>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="images/logo-cnsole.png" class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="magasin.html">MAGASIN</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-section menu-icon-box">
+
+        </div>
+    </header>
+    <img src="./images/hamburger.png" class="menu-icon" id="menu-icon" onclick="onToggle()" />
+    <div class="sideBar " id="sidebar">
+        <ul class="menu-list flexDirection">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="magasin.html">MAGAZIN</a>
+            </li>
+            <li>
+                <a href="news.html">NEWS</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+
+    </div>
+</section>
+<section>
+
+    <div class="container-general">
+
+        <h1>MAGAZINES CONSOLE PLUS</h1>
+        <hr>
+        <div class="magasin-pic">
+            <div class="picture">
+                <img class="pic1" src="images/magasin2.png">
+                <div class="contenu-box">
+                    <div class="contenu">
+                        <h3>Console Plus - N°0</h3>
+                        <a href="https://www.backoldgaming.com/data/medias/files/console-plus-n3/Console_Plus_-_n3.pdf"><button type="button">Télécharger</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture">
+                <img class="pic1" src="images/magsin1.png">
+                <div class="contenu-box">
+                    <div class="contenu">
+                        <h3>Console Plus - N°1</h3>
+                        <a href="https://www.backoldgaming.com/data/medias/files/console-plus-n0/Console_Plus_-_N0.pdf"><button type="button">Télécharger</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture">
+                <img class="pic1" src="images/magasin3.png">
+                <div class="contenu-box">
+                    <div class="contenu">
+                        <h3>Console Plus - N°2</h3>
+                        <a href="https://www.backoldgaming.com/data/medias/files/console-plus-n6/Console_Plus_-_n6.pdf"><button type="button">Télécharger</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="picture">
+                <img class="pic1" src="images/magasin4.png">
+                <div class="contenu-box">
+                    <div class="contenu">
+                        <h3>Console Plus - N°3</h3>
+                        <a href="https://www.backoldgaming.com/data/medias/files/console-plus-n7/Console_Plus_-_n7.pdf"><button type="button">Télécharger</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="first">
+        <h1 class="h1">Our promise to you</h1>
+        <div class="promise">
+            <div class="price">
+                <img class="promise-logo" src="images/security.png"><h3>
+                Best price guarantee
+            </h3>
+                <p>We'll refund the difference  find it cheaper elsewhere</p>
+            </div>
+            <div class="control">
+                <img class="promise-logo" src="images/like.png">
+                <h3>You're in control</h3>
+                <p>Manage your subscription online  dedicated self-service site</p>
+            </div>
+            <div class="hidden">
+                <img class="promise-logo" src="images/truck.png">
+                <h3>No hidden costs</h3>
+                <p>Manage your subscription online  dedicated self-service site</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <footer CLASS="footer">
+        <div class="container-footer">
+            <div>
+                <img class="footer-logo" src="images/logo-cnsole.png">
+            </div>
+            <div class="footer-media1">
+                <img  class="footer-media" src="images/facebook.png">
+                <img class="footer-media" src="images/linkedin.png">
+                <img class="footer-media" src="images/instagram.png">
+                <img class="footer-media" src="images/whatsapp.png">
+            </div>
+        </div>
+        <hr>
+        <div class="footer-text">
+            <p>
+                © 2023 Mehdi.com - Theme WordPress par
+                <br>
+                Game.com ©2023 Tous droits réservés
+            </p>
+        </div>
+    </footer>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function onToggle(){
+        console.log('clicked');
+        var menIcon = document.getElementById("menu-icon");
+        var sideBar = document.querySelector(".sideBar");
+
+        if(sideBar.style.display === "list-item"){
+            sideBar.style.display = "none";
+            menIcon.src = "./images/hamburger.png";
+        }else{
+            sideBar.style.display = "list-item";
+            menIcon.src = "./images/x.png";
+        }
+    }
+</script>
+</body>
+</html>>

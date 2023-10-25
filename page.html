@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link  rel="stylesheet" href="mediaQueries.css" >
+</head>
+<body>
+<section>
+    <header>
+        <nav class="navigation">
+            <div class="logo">
+                <img src="images/logo-cnsole.png" class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="magasin.html">MAGASIN</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-section menu-icon-box">
+
+        </div>
+    </header>
+    <img src="./images/hamburger.png" class="menu-icon" id="menu-icon" onclick="onToggle()" />
+    <div class="sideBar " id="sidebar">
+        <ul class="menu-list flexDirection">
+            <li>
+                <a href="index.html">HOME</a>
+            </li>
+            <li>
+                <a href="magasin.html">MAGAZIN</a>
+            </li>
+            <li>
+                <a href="news.html">NEWS</a>
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+
+    </div>
+</section>
+<section>
+    <div class="kaka">
+        <div class="text">
+            <h2>Iceman just survived the same weapon that nearly killed him at the Hellfire Gala in the weirdest way possible
+                <br></br>
+                published about 18 hours ago
+            </h2>
+            <img class="news-img-3" src="images/news4.png">
+            <p>Astonishing Iceman has been one of the biggest bright spots in the recent X-Men line thanks to its engaging pacing,Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consectetur debitis delectus dolor doloribus et eum explicabo id iste labore, molestias nihil non perferendis porro quaerat quia reiciendis totam unde?
+                Alias!lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dicta eius iure molestiae officiis quo? Ad animi, atque, corporis eaque est impedit iste laboriosam, modi numquam quidem repellat rerum sequi vel.
+                sleek art, and interesting concept for Bobby Drake's resurrection after the Hellfire Gala. And in Astonishing Iceman #3,
+                things take a turn for the wacky and weird as Bobby figures out a way to beat the same Orchis tactic that destroyed his body at the Hellfire Gala.
+                And when I say "beat," I mean that literally, in a way you won't see coming</p>
+            <h2>Spoilers ahead for Astonishing Iceman #3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores blanditiis consequuntur dicta doloremque,
+                ducimus ea earum et id inventore ipsum iure labore nulla quam quidem, quo rem tenetur? Id!
+                Astonishing Iceman #3 by writer Steve Orlando, artist Vincenzo Carratù, colorist Java Tartaglia,
+                and letterer Travis Lanham opens with Iceman helping Aaron Fischer stop an assassin named Mister Clean from killing several young mutants.</p>
+            <div class="text2">
+            <img class="news-img-4" src="images/news8.png">
+                <div class="news-text1">
+                    <h3>Why Choose Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                </div>
+            </div>
+            <img class="news-img-5" src="images/news-9.png">
+    </div>
+</section>
+<section>
+    <footer CLASS="footer">
+        <div class="container-footer">
+            <div>
+                <img class="footer-logo" src="images/logo-cnsole.png">
+            </div>
+            <div class="footer-media1">
+                <img  class="footer-media" src="images/facebook.png">
+                <img class="footer-media" src="images/linkedin.png">
+                <img class="footer-media" src="images/instagram.png">
+                <img class="footer-media" src="images/whatsapp.png">
+            </div>
+        </div>
+        <hr>
+        <div class="footer-text">
+            <p>© 2023 Mehdi.com - Theme WordPress par
+                <br>
+                Game.com ©2023 Tous droits réservés</p>
+        </div>
+    </footer>
+</section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function onToggle(){
+        console.log('clicked');
+        var menIcon = document.getElementById("menu-icon");
+        var sideBar = document.querySelector(".sideBar");
+
+        if(sideBar.style.display === "list-item"){
+            sideBar.style.display = "none";
+            menIcon.src = "./images/hamburger.png";
+        }else{
+            sideBar.style.display = "list-item";
+            menIcon.src = "./images/x.png";
+        }
+    }
+</script>
+
+
+</body>
+</html>
